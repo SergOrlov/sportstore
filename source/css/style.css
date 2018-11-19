@@ -241,7 +241,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  background-color: rgba(89, 89, 89, 0.5);
+  background-color: rgba(25, 33, 45, 0.5);
+  border-bottom: 1px solid #38567f;
 }
 .header__elements-wrapper {
   display: -webkit-box;
@@ -415,15 +416,62 @@ input[type="radio"].visually-hidden {
 }
 .nav__user-link--cart {
   height: 31px;
-  width: 27px;
+  width: 30px;
   background-image: url("../img/cart.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .nav__user-link--search {
   height: 31px;
-  width: 27px;
+  width: 30px;
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+.intro {
+  width: 100%;
+  margin-top: -75px;
+  min-height: 900px;
+  background-image: url("../img/test.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.intro__description {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-top: 555px;
+  padding-left: 114px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 8px;
+}
+.intro__description::before {
+  position: absolute;
+  content: "";
+  top: 225px;
+  left: 100px;
+  width: 600px;
+  height: 300px;
+  background-image: url("../img/nike.png");
+  background-repeat: no-repeat;
+}
+.intro__link {
+  display: block;
+  padding: 14px 5px 14px 5px;
+  margin-left: 314px;
+  width: 167px;
+  background-color: #3954d9;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 20px;
+  text-align: center;
 }

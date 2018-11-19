@@ -1,0 +1,43 @@
+.intro {
+    // display: flex;
+    width: 100%;
+    margin-top: -75px;
+    min-height: 900px;
+    background-image: url("../img/test.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.intro__description {
+    position: relative;
+    .indenting-reset;
+    padding-top: 555px;
+    padding-left: 114px;
+    margin-bottom: 50px;
+    .text-style(20px, 29px, bold, uppercase);
+    color: @white;
+    letter-spacing: 8px;
+    &::before {
+        position: absolute;
+        content: "";
+        top: 225px;
+        left: 100px;
+        width: 600px;
+        height: 300px;
+        background-image: url("../img/nike.png");
+        background-repeat: no-repeat;
+    }
+}
+
+.intro__link {
+    display: block;
+    padding: 14px 5px 14px 5px;
+    margin-left: 314px;
+    width: 167px;
+    background-color: #3954d9;
+    .text-style(17px, 21px, normal, uppercase);
+    color: @white;
+    border-radius: 20px;
+    text-align: center;
+}
