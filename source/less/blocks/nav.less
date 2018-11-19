@@ -31,47 +31,97 @@
 }
 
 .nav__social {
+    display: flex;
     width: 19%;
+    border-right: 1px solid #7d7d7d;
 }
 
 .nav__social-list {
     display: flex;
+    flex-wrap: wrap;
     .list-reset;
-    padding: 25px 0;
-    padding-left: 14%;
+    padding: 22px 0;
+    // padding-left: 10%;
+    padding-right: 0px;
+    margin: 0 auto;
+}
+
+.nav__social-item {
+    padding-left: 25px;
+    &:first-child {
+        padding-left: 0;
+    }
+}
+
+.nav__social-link {
+    display: block;
 }
 
 .nav__social-link--fb {
-    display: block;
     height: 31px;
     width: 27px;
     background-image: url("../img/fb-header.svg");
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .nav__social-link--tw {
-    display: block;
     height: 31px;
     width: 27px;
-    background-image: url("../img/fb-header.svg");
+    background-image: url("../img/tw-header.svg");
     background-repeat: no-repeat;
+    background-position: center;
 }
 .nav__social-link--g {
-    display: block;
     height: 31px;
     width: 27px;
-    background-image: url("../img/fb-header.svg");
+    background-image: url("../img/g-header.svg");
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .nav__social-link--insta {
-    display: block;
     height: 31px;
-    width: 27px;
-    background-image: url("../img/fb-header.svg");
+    width: 35px;
+    background-image: url("../img/insta-header.svg");
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .nav__user {
+    display: flex;
     width: 10%;
+}
+
+.nav__user-list {
+    .list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 22px 0;
+}
+
+.nav__user-item:last-child {
+    padding-left: 30px;
+}
+
+.nav__user-link {
+    display: block;
+}
+
+.nav__user-link--cart {
+    height: 31px;
+    width: 27px;
+    background-image: url("../img/cart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav__user-link--search {
+    height: 31px;
+    width: 27px;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
