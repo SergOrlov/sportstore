@@ -1,0 +1,95 @@
+.shipping {
+    margin-top: -70px;
+    background-color: @white;
+}
+
+.shipping__list {
+    .list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 160px;
+    padding-bottom: 55px;
+    text-align: center;
+}
+
+.shipping__item {
+    position: relative;
+    width: 375px;
+    padding-left: 20px;
+}
+
+.shipping__item--plane {
+    &::before {
+        position: absolute;
+        content: "";
+        top: -80px;
+        left: 170px;
+        width: 39px;
+        height: 39px;
+        background-image: url("../img/plane.png");
+        background-repeat: no-repeat;
+    }
+}
+
+.shipping__item--clock {
+    &::before {
+        position: absolute;
+        content: "";
+        top: -80px;
+        left: 170px;
+        width: 43px;
+        height: 44px;
+        background-image: url("../img/clock.png");
+        background-repeat: no-repeat;
+    }
+}
+
+.shipping__item--lifebouy-1 {
+    &::before {
+        position: absolute;
+        content: "";
+        top: -80px;
+        left: 170px;
+        width: 50px;
+        height: 51px;
+        background-image: url("../img/lifebouy.png");
+        background-repeat: no-repeat;
+    }
+}
+
+.shipping__item--lifebouy-2 {
+    &::before {
+        position: absolute;
+        content: "";
+        top: -80px;
+        left: 170px;
+        width: 50px;
+        height: 51px;
+        background-image: url("../img/lifebouy.png");
+        background-repeat: no-repeat;
+    }
+}
+
+.shipping__item-title {
+    .indenting-reset;
+    margin-bottom: 20px;
+    font-family: "BebasNeueBold", Arial, sans-serif;
+    .text-style(33px, 26px, normal, uppercase);
+    color: #0d2e57;
+}
+
+.shipping__item-description {
+    .indenting-reset;
+    padding-left: 30px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+    .text-style(13px, 24px, lighter, none);
+    color: #8a8a8a;
+}
+
+.shipping__item-link {
+    display: block;
+    .text-style(13px, 26px, bolder, none);
+    color: #3753da;
+    cursor: pointer;
+}

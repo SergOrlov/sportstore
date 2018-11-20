@@ -229,6 +229,10 @@ input[type="radio"].visually-hidden {
   width: 1500px;
   margin: 0 auto;
 }
+.container--main {
+  -webkit-box-shadow: -1px 0px 47px 10px #e5e5e5;
+          box-shadow: -1px 0px 47px 10px #e5e5e5;
+}
 .btn {
   display: block;
   border: none;
@@ -428,6 +432,15 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: center;
 }
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .intro {
   width: 100%;
   margin-top: -75px;
@@ -474,4 +487,98 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   border-radius: 20px;
   text-align: center;
+}
+.shipping {
+  margin-top: -70px;
+  background-color: #ffffff;
+}
+.shipping__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 160px;
+  padding-bottom: 55px;
+  text-align: center;
+}
+.shipping__item {
+  position: relative;
+  width: 375px;
+  padding-left: 20px;
+}
+.shipping__item--plane::before {
+  position: absolute;
+  content: "";
+  top: -80px;
+  left: 170px;
+  width: 39px;
+  height: 39px;
+  background-image: url("../img/plane.png");
+  background-repeat: no-repeat;
+}
+.shipping__item--clock::before {
+  position: absolute;
+  content: "";
+  top: -80px;
+  left: 170px;
+  width: 43px;
+  height: 44px;
+  background-image: url("../img/clock.png");
+  background-repeat: no-repeat;
+}
+.shipping__item--lifebouy-1::before {
+  position: absolute;
+  content: "";
+  top: -80px;
+  left: 170px;
+  width: 50px;
+  height: 51px;
+  background-image: url("../img/lifebouy.png");
+  background-repeat: no-repeat;
+}
+.shipping__item--lifebouy-2::before {
+  position: absolute;
+  content: "";
+  top: -80px;
+  left: 170px;
+  width: 50px;
+  height: 51px;
+  background-image: url("../img/lifebouy.png");
+  background-repeat: no-repeat;
+}
+.shipping__item-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "BebasNeueBold", Arial, sans-serif;
+  font-size: 33px;
+  line-height: 26px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #0d2e57;
+}
+.shipping__item-description {
+  padding: 0;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: lighter;
+  text-transform: none;
+  color: #8a8a8a;
+}
+.shipping__item-link {
+  display: block;
+  font-size: 13px;
+  line-height: 26px;
+  font-weight: bolder;
+  text-transform: none;
+  color: #3753da;
+  cursor: pointer;
 }
