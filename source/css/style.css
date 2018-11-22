@@ -733,3 +733,142 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
 }
+.featured-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.featured-products__product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  width: 375px;
+  min-height: 378px;
+  border: 1px solid #c7c7c7;
+  border-top: none;
+}
+.featured-products__product-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.featured-products__img {
+  display: block;
+  margin-bottom: 30px;
+  width: 330px;
+  height: 200px;
+}
+.featured-products__img--glasses {
+  display: block;
+  margin-bottom: 55px;
+  height: 150px;
+}
+.featured-products__img--watch {
+  display: block;
+  margin-bottom: 0;
+  width: 232px;
+  height: 232px;
+}
+.featured-products__product-title {
+  padding: 0;
+  margin: 0;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  font-family: "BebasNeueBold", Arial, sans-serif;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #0d2e57;
+}
+.featured-products__new-price {
+  display: inline-block;
+  padding-left: 30px;
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #0d2e57;
+}
+.featured-products__old-price {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #929292;
+  text-decoration: line-through;
+}
+.featured-products__banner {
+  padding-top: 65px;
+  padding-bottom: 55px;
+  padding-left: 46px;
+  width: 375px;
+  min-height: 376px;
+  background-color: #232323;
+}
+.featured-products__banner-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "BebasNeueBold", Arial, sans-serif;
+  font-size: 60px;
+  line-height: 61px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.featured-products__banner-description {
+  padding: 0;
+  margin: 0;
+  padding-right: 90px;
+  margin-bottom: 35px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 5px;
+}
+.featured-products__banner-link {
+  padding: 15px 5px;
+  width: 133px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #3954d9;
+  text-align: center;
+  border-radius: 30px;
+}
+.featured-products__banner-wide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 750px;
+  min-height: 376px;
+  background-image: url("../img/b.jpg");
+  background-repeat: no-repeat;
+}
+.featured-products__banner-link--blue {
+  background-color: #65cbff;
+  margin-top: 275px;
+  margin-left: 46px;
+}
