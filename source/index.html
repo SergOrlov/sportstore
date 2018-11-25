@@ -135,23 +135,25 @@
               <span class="offer__new-price">$500</span>
               <span class="offer__old-price">$1000</span>
             </div>
-            <ul class="offer__price-list">
-              <li class="offer__price-item">
-                <span class="offer__time">09</span>
-                <span class="offer__dots">....</span>
-                <span class="offer__time-description">hours</span>
-              </li>
-              <li class="offer__price-item">
-                <span class="offer__time">56</span>
-                <span class="offer__dots">....</span>
-                <span class="offer__time-description">minutes</span>
-              </li>
-              <li class="offer__price-item">
-                <span class="offer__time">11</span>
-                <span class="offer__dots">....</span>
-                <span class="offer__time-description">seconds</span>
-              </li>
-            </ul>
+            <div class="offer__price-list-wrapper">
+              <ul class="offer__price-list">
+                <li class="offer__price-item">
+                  <span class="offer__time">09</span>
+                  <span class="offer__dots">....</span>
+                  <span class="offer__time-description">hours</span>
+                </li>
+                <li class="offer__price-item">
+                  <span class="offer__time">56</span>
+                  <span class="offer__dots">....</span>
+                  <span class="offer__time-description">minutes</span>
+                </li>
+                <li class="offer__price-item">
+                  <span class="offer__time">11</span>
+                  <span class="offer__dots">....</span>
+                  <span class="offer__time-description">seconds</span>
+                </li>
+              </ul>
+            </div>
             <a class="btn offer__link" href="#">SHOP NOW</a>
           </div>
         </div>
@@ -376,7 +378,7 @@
   <footer class="footer">
     <div class="container footer__container">
       <div class="footer__wrapper">
-        <div class="footer__shops">
+        <div class="footer__information">
           <h3 class="footer__title">Shops</h3>
           <ul class="footer__list">
             <li class="footer__item">
@@ -405,7 +407,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__Information">
+        <div class="footer__information">
           <h3 class="footer__title">Information</h3>
           <ul class="footer__list">
             <li class="footer__item">
@@ -434,7 +436,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__customer-service">
+        <div class="footer__information">
           <h3 class="footer__title">Customer Service</h3>
           <ul class="footer__list">
             <li class="footer__item">
@@ -465,30 +467,30 @@
         </div>
         <div class="footer__contact">
           <div class="footer__social">
-            <h3 class="footer__title">STAY CONNECTED</h3>
+            <h3 class="footer__title footer__title--social">STAY CONNECTED</h3>
             <ul class="footer__social-list">
               <li class="footer__social-item">
-                <a class="footer__social-link"><span class="visually-hidden">we are in g+</span></a>
+                <a class="footer__social-link footer__social-link--g"><span class="visually-hidden">we are in g+</span></a>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-link"><span class="visually-hidden">we are in p</span></a>
+                <a class="footer__social-link footer__social-link--p"><span class="visually-hidden">we are in p</span></a>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-link"><span class="visually-hidden">we are in v</span></a>
+                <a class="footer__social-link footer__social-link--v"><span class="visually-hidden">we are in v</span></a>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-link"><span class="visually-hidden">we are in facebook</span></a>
+                <a class="footer__social-link footer__social-link--fb"><span class="visually-hidden">we are in facebook</span></a>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-link"><span class="visually-hidden">we are in twitter</span></a>
+                <a class="footer__social-link footer__social-link--tw"><span class="visually-hidden">we are in twitter</span></a>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-link"><span class="visually-hidden">we are in net</span></a>
+                <a class="footer__social-link footer__social-link--net"><span class="visually-hidden">we are in net</span></a>
               </li>
             </ul>
           </div>
           <div class="footer__newsletter">
-            <h3 class="footer__title">NEWSLETTER SIGN UP</h3>
+            <h3 class="footer__title footer__title--subcribe">NEWSLETTER SIGN UP</h3>
             <form class="footer__subscribe-form" method="post" action="https://echo.portpro.com">
               <label class="visually-hidden footer__field-name" for="user-subscribe">subscribe</label>
               <input class="footer__input-parameters" type="text" id="user-subscribe" name="user-subscribe">
@@ -500,22 +502,22 @@
       <div class="footer__payment">
         <ul class="footer__payment-list">
           <li class="footer__payment-item">
-            <a class="footer__payment-link"><span class="visually-hidden">card</span></a>
+            <a class="footer__payment-link footer__payment-link--p" href="#"><span class="visually-hidden">card</span></a>
           </li>
           <li class="footer__payment-item">
-            <a class="footer__payment-link"><span class="visually-hidden">card</span></a>
+            <a class="footer__payment-link" href="#"><span class="visually-hidden">card</span></a>
           </li>
           <li class="footer__payment-item">
-            <a class="footer__payment-link"><span class="visually-hidden">card</span></a>
+            <a class="footer__payment-link" href="#"><span class="visually-hidden">card</span></a>
           </li>
           <li class="footer__payment-item">
-            <a class="footer__payment-link"><span class="visually-hidden">card</span></a>
+            <a class="footer__payment-link" href="#"><span class="visually-hidden">card</span></a>
           </li>
           <li class="footer__payment-item">
-            <a class="footer__payment-link"><span class="visually-hidden">card</span></a>
+            <a class="footer__payment-link" href="#"><span class="visually-hidden">card</span></a>
           </li>
           <li class="footer__payment-item">
-            <a class="footer__payment-link"><span class="visually-hidden">card</span></a>
+            <a class="footer__payment-link" href="#"><span class="visually-hidden">card</span></a>
           </li>
         </ul>
       </div>

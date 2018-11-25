@@ -43,21 +43,29 @@
 }
 
 .offer__price-block {
-    display: flex;
+    display: block;
     margin: 0 auto;
     margin-bottom: 45px;
 }
 
 .offer__new-price {
+    display: inline-block;
+    vertical-align: middle;
     margin-right: 50px;
     .text-style(52px, 62px, bold, uppercase);
     color: #3954d9;
 }
 
 .offer__old-price {
+    display: inline-block;
+    vertical-align: middle;
     .text-style(32px, 58px, bolder, uppercase);
     color: #121212;
     text-decoration: line-through;
+}
+
+.offer__price-list-wrapper {
+    display: flex;
 }
 
 .offer__price-list {

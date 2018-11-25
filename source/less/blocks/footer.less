@@ -6,10 +6,164 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    z-index: -1;
+    z-index: 0;
 }
 
 .footer__container {
     display: flex;
     flex-direction: column;
 }
+
+.footer__wrapper {
+    display: flex;
+    padding: 0 40px;
+    padding-bottom: 85px;
+    border-bottom: 1px solid #535353;
+}
+
+.footer__information {
+    width: auto;
+    margin-right: 100px;
+}
+
+.footer__title {
+    .indenting-reset;
+    margin-bottom: 30px;
+    font-family: "Poppins", Arial, sans-serif;
+    .text-style(26px, 30px, normal, uppercase);
+    color: #3753da;
+}
+
+.footer__list {
+    .list-reset;
+}
+
+.footer__item {
+    margin-bottom: 10px;
+}
+
+.footer__link {
+    display: block;
+    font-family: "Poppins", Arial, sans-serif;
+    .text-style(16px, 20px, normal, none);
+    color: @white;
+    cursor: pointer;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+}
+
+.footer__title--social {
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.footer__social-list {
+    .list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.footer__social-item {
+    position: relative;
+    margin-right: 16px;
+}
+
+.footer__social-link {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: @white;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.footer__social-link--g {
+    &::before {
+        position: absolute;
+        content: "";
+        top: 14px;
+        left: 7px;
+        width: 365px;
+        height: 30px;
+        background-image: url("../img/footer-social.png");
+        background-repeat: no-repeat;
+        z-index: 5;
+    }
+}
+
+.footer__title--subcribe {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.footer__input-parameters {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 25px;
+    width: 410px;
+    height: 45px;
+    background-color: #2f2f2f;
+    font-family: "Poppins", Arial, sans-serif;
+    .text-style(16px, 20px, normal, none);
+    color: @white;
+    border: none;
+    border-radius: 50px;
+}
+
+.footer__button {
+    display: block;
+    margin-left: 15px;
+    padding: 12px 10px;
+    width: 140px;
+    .text-style(13px, 13px, normal, uppercase);
+    color: @white;
+    background-color: #3955da;
+    border-radius: 40px;
+}
+
+.footer__payment {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 120px;
+}
+
+.footer__payment-list {
+    .list-reset;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.footer__payment-item {
+    position: relative;
+    margin-right: 10px;
+}
+
+.footer__payment-link {
+    display: block;
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.footer__payment-link--p {
+    &::before {
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 5px;
+        width: 280px;
+        height: 30px;
+        background-image: url("../img/payment.png");
+        background-repeat: no-repeat;
+    }
+}
+
+
