@@ -7,17 +7,20 @@
     "autoprefixer": "9.1.x",
     "browser-sync": "2.24.x",
     "gulp": "4.0.x",
+    "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-less": "4.0.x",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
+    "gulp-rename": "^1.4.0",
     "gulp-webp": "^3.0.0"
   },
   "scripts": {
     "build": "gulp css",
     "start": "gulp start",
     "images": "gulp images",
-    "webp": "gulp webp"
+    "webp": "gulp webp",
+    "minify": "gulp minify"
   },
   "browserslist": [
     "last 2 versions",

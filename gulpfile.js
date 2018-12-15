@@ -8,6 +8,8 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
+var minify = require("gulp-csso");
+var rename = require("gulp-rename");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -55,4 +57,12 @@ gulp.task("webp", function() {
       quality: 90
     }))
     .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("minify", function() {
+  return gulp.src("source/css/style.css")
+    .pipe(gulp.dest("build/css"))
+    .pipe(minify())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css/"));
 });
